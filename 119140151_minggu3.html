@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Minggu 3</title>
+</head>
+<body>
+    <label>Pilih tema: </label>
+    <select onchange="update_tema(this.value)">
+        <option value="White">White</option>
+        <option value="Red">Red</option>
+        <option value="Violet">Violet</option>
+        <option value="Blue">Blue</option>
+        <option value="Black">Black</option>
+    </select>
+
+    <h2>This Is Akbar Website</h2>
+
+    <label>Pilih cuaca hari ini: </label>
+    <select onchange="teks_cuaca(this.value)">
+        <option value="1">Cerah</option>
+        <option value="2">Berawan</option>
+        <option value="3">Mendung</option>
+        <option value="4">Hujan</option>
+    </select>
+    <p id="cuaca">Hari ini cuacanya Cerah, bawa minum agar tetap terhidrasi</p>
+
+    <label>Masukkan angka: </label>
+    <input type="text" onchange="faktorial(this.value)">
+    <p id="hasil_faktorial">Hasil faktorial akan tampil disini</p>
+</body>
+<script>
+    function update_tema(color) {
+        document.body.style.backgroundColor = color;
+        if (color == "Black" || color == "Blue") {
+            document.body.style.color = "White";
+        } else {
+            document.body.style.color = "Black";
+        }
+    }
+
+    function teks_cuaca(value) {
+        var teks;
+        if (value == 1) {
+            teks = "Hari ini cuacanya Cerah, bawa minum agar tetap terhidrasi";
+        } else if(value == 2) {
+            teks = "Hari ini cuacanya Berawan, suhu tidak terlalu panas";
+        } else if(value == 3) {
+            teks = "Hari ini cuacanya Mendung, jangan lupa pakai jaket";
+        } else {
+            teks = "Hari ini cuacanya Hujan, jangan lupa bawa payung/jas hujan"
+        }
+
+        document.getElementById("cuaca").textContent = teks;
+    }
+
+    function faktorial(angka) {
+        var hasil = 1;
+        for (i = 1; i <= angka; i++){
+            hasil = hasil * i;
+        } 
+        document.getElementById("hasil_faktorial").textContent = "Faktorial dari "+angka+" adalah "+hasil;
+    }
+</script>
+</html>
