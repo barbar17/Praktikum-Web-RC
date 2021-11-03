@@ -1,4 +1,6 @@
-<table border = '1'>
+<html>
+    
+<table class="tabel">
     <tr>
         <th>No</th>
         <th>NIM</th>
@@ -22,3 +24,4 @@
     </tr>
         <?php endwhile;?>
 </table>
+</html>

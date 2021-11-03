@@ -1,0 +1,56 @@
+*{
+    background-color: floralwhite;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.tabel {
+    border-collapse: collapse;
+    border: solid 1px black;
+}
+.tabel th, .tabel td {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+#btn_tambah {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#btn_tambah:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid green;
+}
+
+#btn_ubah {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#btn_ubah:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid blue;
+}
+
+#btn_hapus {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#btn_hapus:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid red;
+}
