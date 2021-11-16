@@ -1,0 +1,16 @@
+*{
+    background-color: floralwhite;
+}
+
+#btn_submit {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#btn_submit:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid green;
+}
